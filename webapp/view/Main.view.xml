@@ -1,0 +1,35 @@
+<mvc:View controllerName="com.demo.controller.Main" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="{i18n&gt;title}">
+				<content>
+					<ObjectHeader iconActive="false" id="__header0" intro="{/city}" introActive="true" number="" numberUnit="" title="{/country}"
+						titleActive="true"/>
+					<Table columns="{/cols}" id="__table0" items="{/items}">
+						<customData>
+							<sap.ui.core:CustomData id="__data2" key="sap-ui-fastnavgroup" value="true" writeToDom="true" xmlns:sap.ui.core="sap.ui.core"/>
+						</customData>
+						<items>
+							<ColumnListItem counter="0" id="__item0">
+								<cells>
+									<Text maxLines="0" text="{date}"/>
+									<Text maxLines="0" text="{temp}"/>
+									<Text maxLines="0" text="{units}"/>
+									<Text maxLines="0" text="{humidity}"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+						<columns>
+							<Column>
+								<header>
+									<Label text="{name}"/>
+								</header>
+							</Column>
+						</columns>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
