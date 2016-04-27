@@ -48,11 +48,11 @@ sap.ui.define([
 		_loadForecast: function() {
 			var oView = this.getView();
 			var oParams = {
-				q: "London",
-				units: "metric",
-				appid: "b1b15e88fa797225412429c1c50c122a",
-				cnt: 16,
-				mode: "json"
+				q: "London",  // Get the weather in london
+				units: "metric", 
+				appid: "{YOUR_API_KEY}",  // replace with your API key
+				cnt: 16,  // get weather for the next 16 days
+				mode: "json"  // get it in JSON format 
 			};
 			var sUrl = "/OpenWeather/data/2.5/forecast/daily";
 			oView.setBusy(true);
